@@ -1,0 +1,7 @@
+<p>shopping-list works!</p>
+
+<div class="wrapping-div" *ngIf="shopItem$ | async as shopitems">
+
+  <app-shopping-item *ngFor="let item of shopitems"
+    [item]="item"></app-shopping-item>
+</div>
